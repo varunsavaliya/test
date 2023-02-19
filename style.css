@@ -1,27 +1,84 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-nav .right img{
+
+body {
+    background-color: #fff !important;
+}
+
+.left button,
+.offcanvas-header button {
+    border: none !important;
+}
+
+nav .right {
+    cursor: pointer;
+}
+
+nav .right img {
     width: 11px;
     height: 6px;
     margin-right: 11px;
 }
 
-nav .right .profile img{
+nav .right .profile img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
 
-nav .right p{
+nav .right p {
     margin-right: 9px !important;
 }
 
 .navbar-toggler:focus {
-       
     box-shadow: none;
     border: none !important;
+}
+
+.header-menu {
+    margin-left: 85px;
+}
+
+.header-menu li a {
+    margin-right: 34px;
+}
+
+@media screen and (max-width:991px) {
+    .header-menu {
+        margin-left: 5px;
+    }
+    .offcanvas-header img {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .right p {
+        display: none;
+    }
+    .dropdown-menu {
+        transform: translateX(-6rem);
+    }
+    .dropdown-menu li a {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .left button {
+        padding: 0;
+        font-size: 13px;
+    }
+    .left button+img {
+        width: 56%;
+    }
+    .offcanvas-header {
+        padding-bottom: 0;
+    }
+    .offcanvas-header img {
+        width: 28%;
+    }
 }

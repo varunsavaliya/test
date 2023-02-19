@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.search-bar {
+    box-shadow: 0 2px #E8E8E8;
+}
+
+.search-field {
+    padding: 20px;
+}
+
+.search-field img {
+    width: 21px;
+}
+
+.search-field input {
+    border: none;
+}
+
+input:focus-visible {
+    outline-offset: 0 !important;
+}
+
+.dropdown {
+    border-right: 1px solid #E8E8E8;
+    padding: 20px 0;
+}
+
+.dropdown a {
+    color: #414141;
+    margin-right: 17px;
+    margin-left: 17px;
+    line-height: 10px;
+}
+
+.dropdown a img {
+    margin-left: 18px;
+}
+
+.filter-icon {
+    display: none;
+}
+
+.pill {
+    display: inline-block;
+    border-radius: 50px;
+    position: relative;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 5px 24px 5px 10px;
+    border: 1px solid #E8E8E8;
+    margin-bottom: 0.5rem;
+}
+
+.pill .close {
+    color: #757575;
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    font-size: 22px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.closeAll {
+    border: none;
+    padding: 0;
+    margin: 0 0 0 4px;
+    cursor: pointer;
+}
+
+@media screen and (min-width:769px) and (max-width:991px) {
+    .dropdown a {
+        color: #414141;
+        margin-right: 14px;
+        margin-left: 13px;
+        line-height: 10px;
+    }
+    .dropdown a img {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .search-bar .d-flex {
+        display: none !important;
+    }
+    .filter-icon {
+        display: block;
+    }
+    .dropdown {
+        border: none;
+    }
+}
+
+@media screen and (min-width:425px) and (max-width:525px) {
+    .pill {
+        display: inline-block;
+        border-radius: 50px;
+        position: relative;
+        font-size: 12px;
+        line-height: 20px;
+        padding: 4px 20px 4px 8px;
+        border: 1px solid #E8E8E8;
+    }
+    .pill .close {
+        color: #757575;
+        position: absolute;
+        right: 6px;
+        top: 3px;
+        font-size: 19px;
+        line-height: 20px;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .searched-filters {
+        display: none;
+    }
+}

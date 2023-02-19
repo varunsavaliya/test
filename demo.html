@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pill shape with text and close button</title>
+    <style>
+        .pill {
+            display: inline-block;
+            border-radius: 50px;
+            position: relative;
+            font-size: 14px;
+            line-height: 20px;
+            padding: 5px 36px 5px 16px;
+            border: 1px solid black;
+        }
+        
+        .pill .close {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            font-size: 22px;
+            line-height: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pill">
+        varun
+        <span class="close">&times;</span>
+    </div>
+
+    <script>
+        // Close button functionality
+        var closeButtons = document.querySelectorAll('.pill .close');
+        for (var i = 0; i < closeButtons.length; i++) {
+            closeButtons[i].addEventListener('click', function() {
+                this.parentNode.style.display = 'none';
+            });
+        }
+    </script>
+</body>
+
+</html>

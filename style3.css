@@ -1,0 +1,29 @@
+.search-bar {
+    position: relative;
+    width: 50%;
+}
+
+.fa-search {
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    color: #9ca3af;
+}
+
+.form-input {
+    height: 40px;
+    text-indent: 33px;
+    border-radius: 10px;
+    border: none;
+}
+
+.form-input:focus {
+    box-shadow: none;
+    border: 1px solid #ADADAD;
+}
+
+.btnborder {
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    border-radius: 0%;
+}

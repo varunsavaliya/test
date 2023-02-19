@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    box-shadow: 0 0px 3px 0 rgb(0 0 0 / 20%);
+    max-width: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 0;
+    border: none;
+}
+
+.card-image {
+    position: relative;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+}
+
+.card-items .location {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 6px 10px 6px 10px;
+    border-radius: 20px;
+}
+
+.card-items .location p {
+    color: #fff;
+    display: inline;
+    margin: 0;
+    margin-left: 7px;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.card-items .fav {
+    position: absolute;
+    bottom: 31%;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.card-items .pause-mission-icon {
+    position: absolute;
+    bottom: 6%;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.mission-theme h3 {
+    background-color: #fff;
+    color: #414141;
+    font-size: 15px;
+    font-weight: 400;
+    position: absolute;
+    bottom: -12%;
+    left: 35%;
+    padding: 5px 12px;
+    border-radius: 13px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content .card-title {
+    color: #414141;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.card-content .card-description {
+    color: #bababa;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.card-content .organization-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.card-content .organization-rating .organization p {
+    margin: 0;
+    color: #414141;
+}
+
+.mission-details {
+    position: relative;
+    padding-top: 1.5rem !important;
+}
+
+.mission-details .seats-detail img,
+.mission-details .duration-detail img {
+    margin-right: 14px;
+    width: 33px;
+    height: 33px;
+}
+
+.mission-details .seats-detail img {
+    width: 28px;
+    height: 28px;
+}
+
+.mission-details .seats-detail div p,
+.mission-details .duration-detail p {
+    margin-bottom: 0;
+    color: #414141;
+}
+
+.mission-details .seats-detail div p+p,
+.mission-details .duration-detail p+p {
+    color: #757575;
+}
+
+.mission-date {
+    position: absolute;
+    padding: 5px 10px;
+    border-radius: 22px;
+    border: 1px solid #E8E8E8;
+    z-index: 1;
+    background-color: #fff;
+    top: -22%;
+    left: 7%;
+}
+
+.mission-date p {
+    color: #414141;
+    margin-bottom: 0;
+}
+
+.card-button {
+    background-color: #fff;
+    border: 1px solid #F88634;
+    border-radius: 23px;
+    color: #F88634;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px auto 0 auto;
+    cursor: pointer;
+}
+
+.card-button img {
+    margin-left: 10px;
+}
+
+.card-button img+img {
+    display: none;
+}
+
+.card-button:hover {
+    background-color: #F88634;
+    color: #fff;
+}
+
+.card-button:hover img {
+    display: none;
+}
+
+.card-button:hover img+img {
+    display: inline;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+}
